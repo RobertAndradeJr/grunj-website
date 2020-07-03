@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import { parseMoney } from "../util/Numbers";
+import { websiteURL } from "../util/Domain";
 
 export const Product = ({ node: { id, price, image, name } }) => (
   <div className="Catalogue__item" key={id}>
@@ -19,9 +20,9 @@ export const Product = ({ node: { id, price, image, name } }) => (
           data-item-price={price}
           data-item-image={image.url}
           data-item-name={name}
-          data-item-url={`grunj.netlify.app`}
+          data-item-url={websiteURL}
         >
-          Buy now
+          buy now
         </button>
       </div>
     </div>
