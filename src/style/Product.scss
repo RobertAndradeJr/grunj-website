@@ -18,7 +18,7 @@
   }
 }
 
-.Product:hover .Product__image {
+.Product__image:hover {
   img {
     transform: skew(-15deg, -5deg) rotate(20deg);
   }
