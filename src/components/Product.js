@@ -22,7 +22,7 @@ export const Product = ({ node: { id, price, image, name } }) => (
           data-item-name={name}
           data-item-url={websiteURL}
         >
-          {websiteURL}
+          Buy Now
         </button>
       </div>
     </div>
