@@ -23,7 +23,8 @@
     transform: skew(-15deg, -5deg) rotate(20deg);
   }
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     position: absolute;
     background: black;
@@ -99,8 +100,9 @@
   $steps: 5;
 
   @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))}{
-      transform: translate((random(50) - 25) + px, (random(50) - 25) + px) rotate((30 - random(60)) + deg);
+    #{percentage($i * (1 / $steps))} {
+      transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
+        rotate((30 - random(60)) + deg);
       width: (1 + random(3)) + px;
     }
   }
@@ -110,8 +112,9 @@
   $steps: 5;
 
   @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))}{
-      transform: translate((random(50) - 25) + px, (random(50) - 25) + px) rotate((30 - random(60)) + deg);
+    #{percentage($i * (1 / $steps))} {
+      transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
+        rotate((30 - random(60)) + deg);
       height: (1 + random(2)) + px;
     }
   }
