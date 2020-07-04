@@ -28,6 +28,16 @@ const Layout = ({ children, site }) => (
             </div>
           </div>
         </div>
+        <h3>
+          <Link to="/portfolio">
+          portfolio
+          </Link>
+        </h3>
+        <h3>
+          <Link to="/about">
+          about
+          </Link>
+        </h3>
       </div>
       <div className="Wrap">{children}</div>
       <div className="Wrap">
@@ -43,7 +53,7 @@ const Layout = ({ children, site }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.object
+  children: PropTypes.object,
 };
 
 export default Layout;
