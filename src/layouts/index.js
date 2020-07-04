@@ -7,7 +7,7 @@ import "../style/index.scss";
 
 const Layout = ({ children, site }) => (
   <div>
-    <Helmet title="Snipcart + DatoCMS + GatsbyJS Example" />
+    <Helmet title="Grungly's Art Dungly" />
     <div className="Container">
       <div className="Header">
         <div className="Wrap">
@@ -43,7 +43,7 @@ const Layout = ({ children, site }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.object
 };
 
 export default Layout;

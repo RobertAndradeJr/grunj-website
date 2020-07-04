@@ -1,12 +1,12 @@
 # Snipcart + Gatsby + DatoCMS example
 
-This is a demo project to get you started with a static ecommerce site powered by [Gatsby](https://www.gatsbyjs.org/), [Snipcart](https://snipcart.com/) and [DatoCMS](https://www.datocms.com/).
+This is a static ecommerce site powered by [Gatsby](https://www.gatsbyjs.org/), [Snipcart](https://snipcart.com/) and [DatoCMS](https://www.datocms.com/).
 
-It's a brutalist socks ecommerce site, that looks like this:
+It's an art portfolio + ecommerce site, that looks like this:
 
 ![Socks ecommerce screenshot](./preview.png)
 
-You can see how it looks live on this [demo installation](https://datocms-snipcart-gatsby-demo.netlify.com/).
+You can see how it looks live on this [demo](grunj.netlify.app).
 
 All the details on how this works on the [related blog post](https://www.datocms.com/blog/static-ecommerce-website-snipcart-gatsbyjs-datocms).
 
