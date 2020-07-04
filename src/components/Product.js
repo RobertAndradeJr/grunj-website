@@ -20,7 +20,7 @@ export const Product = ({ node: { id, price, image, name } }) => (
           data-item-price={price}
           data-item-image={image.url}
           data-item-name={name}
-          data-item-url={'grunj.netlify.app'}
+          data-item-url={websiteURL}
         >
           {websiteURL}
         </button>
