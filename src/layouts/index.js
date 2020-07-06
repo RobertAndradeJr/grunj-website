@@ -28,16 +28,17 @@ const Layout = ({ children, site }) => (
             </div>
           </div>
         </div>
-        <h3>
-          <Link to="/portfolio">
-          portfolio
-          </Link>
-        </h3>
-        <h3>
-          <Link to="/about">
-          about
-          </Link>
-        </h3>
+        <div className="navbar">
+          <h3>
+            <Link to="/">home</Link>
+          </h3>
+          <h3>
+            <Link to="/portfolio">portfolio</Link>
+          </h3>
+          <h3>
+            <Link to="/about">about</Link>
+          </h3>
+        </div>
       </div>
       <div className="Wrap">{children}</div>
       <div className="Wrap">

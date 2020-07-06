@@ -5,6 +5,15 @@
   box-shadow: 0 16px 0 black;
   transform: rotateZ(8deg) skew(-2deg, -10deg) translateY(-10%);
   margin: 50px;
+  .navbar {
+    h3 {
+      a {
+        color: white;
+      }
+      display: inline;
+      margin: 1em 0.5em; 
+    }
+  }
 }
 
 .Header__body {
@@ -79,6 +88,8 @@
     }
   }
 }
+
+
 
 @keyframes noise-anim-2 {
   $steps: 20;

@@ -7,18 +7,12 @@ export default () => (
   <StaticQuery
     query={graphql`
       query aboutQuery {
-        products: allDatoCmsProduct {
-          edges {
-            node {
-              id
-              name
-              price
-              image {
-                url
-                sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
-                  ...GatsbyDatoCmsSizes
-                }
-              }
+        about: datoCmsAbout {
+          info
+          id
+          photo {
+            uploadId {
+              url
             }
           }
         }
@@ -29,9 +23,11 @@ export default () => (
         }
       }
     `}
-    render={({ site, products }) => (
+    render={({ site, about }) => (
       <Layout site={site}>
-          <h1>poopy poopy</h1>
+          <h1>poopy poopy about</h1>
+          <p>{JSON.stringify(about)}</p>
+
       </Layout>
     )}
   />
