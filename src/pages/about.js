@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Layout from "../layouts/index";
-import { Product } from "../components/Product";
+import { About } from "../components/About"
 
 export default () => (
   <StaticQuery
@@ -10,9 +10,11 @@ export default () => (
         about: datoCmsAbout {
           info
           id
+          name
           photo {
-            uploadId {
-              url
+            url
+            sizes(maxWidth: 600) {
+              ...GatsbyDatoCmsSizes
             }
           }
         }
@@ -25,9 +27,7 @@ export default () => (
     `}
     render={({ site, about }) => (
       <Layout site={site}>
-          <h1>poopy poopy about</h1>
-          <p>{JSON.stringify(about)}</p>
-
+        <About node={about} />
       </Layout>
     )}
   />
