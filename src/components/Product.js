@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 import { parseMoney } from "../util/Numbers";
 import { websiteURL } from "../util/Domain";
 
-export const Product = ({ node: { id, price, image, name } }) => (
+export default ({ node: { id, price, image, name } }) => (
   <div className="Catalogue__item" key={id}>
     <div>
       <div className="Product__image">
