@@ -13,6 +13,12 @@ export default () => (
               id
               description
               title
+              content {
+                url
+                sizes(maxWidth: 450) {
+                  ...GatsbyDatoCmsSizes
+                }
+              }
             }
           }
         }
@@ -25,8 +31,8 @@ export default () => (
     `}
     render={({ site, portfolio }) => (
       <Layout site={site}>
-          <h1>I like to fart a lot</h1>
-          <Portfolio node={portfolio} />
+        <h1>I like to fart a lot</h1>
+        <Portfolio node={portfolio} />
       </Layout>
     )}
   />

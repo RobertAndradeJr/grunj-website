@@ -5,7 +5,12 @@ import Link from "gatsby-link";
 
 import "../style/index.scss";
 
-const Layout = ({ children, site }) => (
+const Layout = ({
+  children,
+  site: {
+    siteMetadata: { siteName },
+  },
+}) => (
   <div>
     <Helmet title="Grungly's Art Dungly" />
     <div className="Container">
@@ -13,8 +18,8 @@ const Layout = ({ children, site }) => (
         <div className="Wrap">
           <div className="Header__body">
             <h1 className="Header__title">
-              <Link data-text={site.siteMetadata.siteName} to="/">
-                {site.siteMetadata.siteName}
+              <Link data-text={siteName} to="/">
+                {siteName}
               </Link>
             </h1>
             <div className="Header__summary snipcart-summary snipcart-checkout">
@@ -43,8 +48,7 @@ const Layout = ({ children, site }) => (
       <div className="Wrap">{children}</div>
       <div className="Wrap">
         <div className="Footer">
-          This website is just an example project to demonstrate how you can
-          integrate <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
+          <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
           <a href="https://snipcart.com/">Snipcart</a> and{" "}
           <a href="https://www.datocms.com">DatoCMS</a>.
         </div>
