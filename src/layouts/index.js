@@ -27,9 +27,9 @@ const Layout = ({
               <div className="Header__summary__line">
                 Number of items: <span className="snipcart-total-items" />
               </div>
-              <div className="Header__summary__line">
+              {/* <div className="Header__summary__line">
                 Total price: <span className="snipcart-total-price" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

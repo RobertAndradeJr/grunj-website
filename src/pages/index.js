@@ -31,6 +31,11 @@ export default () => (
     `}
     render={({ site, products }) => (
       <Layout site={site}>
+        <h2>recent work</h2>
+        <p>carousel goes here</p>
+        <p>carousel goes here</p>
+        <p>carousel goes here</p>
+        <p>carousel goes here</p>
         <div className="Catalogue">
           {products.edges.map(({ node }, index) => (
             <Product node={node} key={index} />
